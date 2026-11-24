@@ -1,0 +1,49 @@
+# Funil Desenrola Brasil 2026 - Apache config
+
+# Bloqueia acesso a pastas/arquivos privados (credenciais Genesys/UTMify, .env)
+RedirectMatch 404 /\.private
+RedirectMatch 404 /\.git
+RedirectMatch 404 \.env$
+RedirectMatch 404 \.log$
+
+# Forca HTTPS quando disponivel
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Pagina inicial -> redireciona pro checkout
+DirectoryIndex index.html
+
+# Forca UTF-8 em HTML/CSS/JS/JSON (evita textos "JÃ¡ comeÃ§ou")
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+    AddCharset UTF-8 .html .css .js .json
+</IfModule>
+
+# MIME types comuns
+<IfModule mod_mime.c>
+    AddType application/json .json
+    AddType video/mp4 .mp4
+</IfModule>
+
+# Cache curto pro HTML, agressivo pra imagens/video
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType image/png  "access plus 30 days"
+    ExpiresByType image/webp "access plus 30 days"
+    ExpiresByType video/mp4  "access plus 30 days"
+    ExpiresByType text/css   "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType text/html  "access plus 0 seconds"
+</IfModule>
+
+# Permite acesso direto ao api_proxy.php
+<Files "api_proxy.php">
+    Require all granted
+    Order allow,deny
+    Allow from all
+</Files>

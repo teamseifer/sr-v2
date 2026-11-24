@@ -1,0 +1,37 @@
+# =============================================================================
+# .gitignore - Funil Desenrola Brasil 2026
+# =============================================================================
+
+# ----- Segredos e variaveis de ambiente (NUNCA versionar) --------------------
+.env
+.env.*
+!.env.example
+.private/.env
+.private/.env.*
+!.private/.env.example
+secrets-cpf/.env
+secrets-mangofy-sr/.env
+secrets-mangofy/.env
+.private/gateway.txt
+
+# Arquivos de credenciais reais (somente os .example vao para o repo)
+.private/*credentials*.php
+!.private/*credentials*.php.example
+
+# ----- Dados sensiveis de clientes / cache em runtime ------------------------
+.private/cache/
+.private/recovery.sqlite
+*.log
+
+# ----- Backups e temporarios -------------------------------------------------
+*.bak
+*.bak[0-9]
+*~
+*.tmp
+*.swp
+
+# ----- Sistema / editores ----------------------------------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

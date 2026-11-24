@@ -1,0 +1,6 @@
+api_proxy.php
+cron_*.php
+.private/
+secrets-*/
+*.env
+dev-server.mjs

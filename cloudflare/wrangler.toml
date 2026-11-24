@@ -1,0 +1,13 @@
+# Cloudflare Pages — assets estaticos do funil (PHP/api_proxy.php roda no origin).
+name = "sr-v2"
+compatibility_date = "2024-11-01"
+pages_build_output_dir = "."
+
+[env.production]
+name = "sr-v2"
+
+[env.staging]
+name = "sr-v2-staging"
+
+[env.preview]
+name = "sr-v2-preview"

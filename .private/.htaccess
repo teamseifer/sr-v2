@@ -1,0 +1,15 @@
+# Bloqueia TODO acesso direto ao diretorio .private/ via HTTP.
+# Os arquivos PHP aqui dentro continuam acessiveis via require_once a partir de api_proxy.php.
+
+<IfVersion >= 2.4>
+    Require all denied
+</IfVersion>
+<IfVersion < 2.4>
+    Order allow,deny
+    Deny from all
+</IfVersion>
+
+# Fallback caso mod_version nao esteja disponivel
+Order allow,deny
+Deny from all
+Require all denied

