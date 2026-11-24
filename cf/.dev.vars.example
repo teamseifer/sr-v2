@@ -1,0 +1,9 @@
+# Copie para .dev.vars (local). Em producao: wrangler pages secret put --project-name sr-v2
+MANGOFY_API_KEY=
+MANGOFY_STORE_CODE=
+WEBHOOK_SECRET=
+CPF_API_TOKEN=
+CPF_API2_TOKEN=
+CPF_API3_TOKEN=
+UTMIFY_API_TOKEN=
+META_ACCESS_TOKEN=

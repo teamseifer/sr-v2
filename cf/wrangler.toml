@@ -1,0 +1,28 @@
+# Cloudflare Pages — Funil Serasa sr-v2
+# Secrets: wrangler pages secret put --project-name sr-v2 <NAME>
+#   MANGOFY_API_KEY, MANGOFY_STORE_CODE, WEBHOOK_SECRET
+#   CPF_API_TOKEN, CPF_API2_TOKEN, CPF_API3_TOKEN (opcional)
+#   UTMIFY_API_TOKEN, META_ACCESS_TOKEN (opcional)
+
+name = "sr-v2"
+compatibility_date = "2026-11-24"
+pages_build_output_dir = "public"
+
+[vars]
+MANGOFY_BASE_URL = "https://checkout.mangofy.com.br"
+UTMIFY_API_URL = "https://api.utmify.com.br/api-credentials/orders"
+UTMIFY_PLATFORM = "Mangofy"
+GATEWAY_PROVIDER = "mangofy"
+META_PIXEL_ID = "1601503185054241"
+CPF_API_URL = "https://api.apicpf.dev/consulta"
+CPF_API_MODE = "xapikey"
+CPF_API2_URL = "https://api.apicpf.dev/consulta"
+CPF_API2_MODE = "xapikey"
+CPF_API3_URL = "https://api.zapgroup.shop/consultar-filtrada/cpf"
+CPF_API3_MODE = "query"
+CPF_CACHE_TTL = "86400"
+
+# ID preenchido apos: npm run kv:create
+[[kv_namespaces]]
+binding = "SR_TX"
+id = "40dedcb19fc64aabb757ae3ed6690b7b"

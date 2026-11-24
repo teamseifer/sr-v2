@@ -1,0 +1,21 @@
+{
+  "name": "sr-v2-cloudflare",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Funil Serasa sr-v2 — Cloudflare Pages Functions (MangoFy)",
+  "scripts": {
+    "sync": "node sync-public.mjs",
+    "dev": "node sync-public.mjs && wrangler pages dev public",
+    "deploy": "node sync-public.mjs && wrangler pages deploy public --project-name sr-v2 --commit-dirty=true",
+    "deploy:preview": "node sync-public.mjs && wrangler pages deploy public --project-name sr-v2-preview --commit-dirty=true",
+    "deploy:stg": "node sync-public.mjs && wrangler pages deploy public --project-name sr-v2-stg --commit-dirty=true",
+    "deploy:all": "npm run deploy && npm run deploy:preview && npm run deploy:stg",
+    "kv:create": "wrangler kv namespace create SR_TX",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261023.1",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.0.0"
+  }
+}

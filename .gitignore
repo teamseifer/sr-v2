@@ -19,6 +19,11 @@ secrets-mangofy/.env
 !.private/*credentials*.php.example
 
 # ----- Dados sensiveis de clientes / cache em runtime ------------------------
+cf/node_modules/
+cf/.wrangler/
+cf/public/
+cf/.dev.vars
+.wrangler/
 .private/cache/
 .private/recovery.sqlite
 *.log
