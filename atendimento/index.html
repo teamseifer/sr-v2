@@ -157,7 +157,7 @@ var VIDEO_WAIT=19000;
 var DATA_HOJE=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});
 DATA_HOJE=DATA_HOJE.charAt(0).toUpperCase()+DATA_HOJE.slice(1);
 document.getElementById('urgency-date').textContent=DATA_HOJE;
-var URG_CORE='Hoje, <b>'+DATA_HOJE+'</b>, é o <b>último dia</b> para você <b>regularizar seu CPF</b>. Evite <b>bloqueios</b> e <b>perdas de benefícios governamentais</b> vinculados ao seu cadastro.';
+var URG_CORE='Hoje, <b>'+DATA_HOJE+'</b>, é o <b>último dia</b> para você <b>regularizar seu CPF</b>. Evite <b>bloqueios</b> e <b>perdas de benefícios</b> vinculados ao seu cadastro.';
 (function startCountdown(){
   var el=document.getElementById('urgency-timer'),s=47*60+18;
   function tick(){

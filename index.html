@@ -48,23 +48,33 @@ src="https://www.facebook.com/tr?id=1601503185054241&ev=PageView&noscript=1"
   --shadow:0 12px 40px rgba(16,24,40,.12);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
+html{
+  height:100%;
+  overflow-x:hidden;
+  -webkit-text-size-adjust:100%;
+  background:var(--rosa);
+}
 body{
+  min-height:100%;
+  min-height:100dvh;
+  overflow-x:hidden;
   font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-  background:#f4f5f7;
+  background:var(--rosa);
   color:var(--ink);
   -webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 button{font:inherit;cursor:pointer}
 
 .shell{
   width:100%;
-  max-width:430px;
-  min-height:100vh;
-  margin:0 auto;
+  max-width:100%;
+  min-height:100dvh;
+  margin:0;
   background:#fff;
-  box-shadow:0 0 0 1px rgba(0,0,0,.04),0 8px 30px rgba(0,0,0,.06);
+  box-shadow:none;
+  overflow-x:hidden;
 }
 
 /* Hero campanha */
@@ -72,12 +82,16 @@ button{font:inherit;cursor:pointer}
   position:relative;
   background:var(--rosa);
   line-height:0;
+  overflow:hidden;
+  width:100%;
 }
 .hero img{
   width:100%;
+  max-width:100%;
   height:auto;
   object-fit:cover;
   object-position:center top;
+  vertical-align:top;
 }
 
 /* Card principal */
@@ -85,7 +99,7 @@ button{font:inherit;cursor:pointer}
   position:relative;
   z-index:2;
   margin-top:-28px;
-  padding:0 16px 32px;
+  padding:0 max(16px, env(safe-area-inset-right)) 32px max(16px, env(safe-area-inset-left));
 }
 .home-card{
   position:relative;
@@ -125,7 +139,8 @@ button{font:inherit;cursor:pointer}
 
 /* Seção secundária (abaixo da dobra) */
 .home-section{
-  padding:8px 16px 40px;
+  padding:8px max(16px, env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  background:#fff;
 }
 .home-section h2{
   font-size:20px;
@@ -175,7 +190,19 @@ button{font:inherit;cursor:pointer}
 .mini-texto{font-size:12px;color:#888}
 
 @media (min-width:431px){
-  body{padding:12px 0 24px}
+  html{background:#f4f5f7}
+  body{
+    background:#f4f5f7;
+    padding:12px max(12px, env(safe-area-inset-right)) calc(24px + env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+  }
+  .shell{
+    max-width:430px;
+    margin:0 auto;
+    min-height:auto;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 0 0 1px rgba(0,0,0,.04),0 8px 30px rgba(0,0,0,.06);
+  }
 }
 </style>
 <script src="js/track.js" defer></script>
@@ -186,8 +213,8 @@ button{font:inherit;cursor:pointer}
     <img
       src="img/hero-home.png"
       alt=""
-      width="594"
-      height="734"
+      width="647"
+      height="800"
       loading="eager"
       fetchpriority="high"
       decoding="async">
